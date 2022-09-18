@@ -40,11 +40,11 @@ You can either get precompiled binaries (1) OR build your own firmware (2):
 1. Connect the USB of the board to your Computer or Raspberry PI through microUSB port(Note: The USB of the board cannot supply power to the MCU, so an external 12/24V is required to supply power to the board).  Note: this affects step 3 below.
 2. Press and hold the `Boot` button on the back, then click the `Reset` button, and then release the `boot` button. And The MCU has entered DFU mode now.
    <br/><img src=Images/boot.png width="400" /><br/>
-3. You can update the firmware through your Computer (a.) or use the raspberry pi (b.)
-  a. Update the firmware through Computer
+3. You can update the firmware through your Computer (i) or use the raspberry pi (ii)
+  * Update the firmware through Computer
     * Download and install the required `STM32CubeProgrammer` directly from the ST website:  https://www.st.com/en/development-tools/stm32cubeprog.html
     * Download `firmware.bin` into MCU with `STM32CubeProgrammer`, and then click `Reset` button to enter normal working mode.
-  b. Update the firmware Directly through Raspberry PI
+  * Update the firmware Directly through Raspberry PI
     * from your ssh session, run `lsusb`. and find the ID of the dfu device.
     * run `make flash FLASH_DEVICE=1234:5678` replace 1234:5678 with the ID from the previous step
     * click `Reset` button to enter normal working mode
