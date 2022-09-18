@@ -55,7 +55,7 @@ You can either get precompiled binaries (1) or build your own firmware (2):
     [mcu HermitCrab]
     serial: /dev/serial/by-id/usb-Klipper_stm32f072xx_1234
     ```
-3. If you use Canbus to communicate with raspberry pi, you need to modify the following files by SSH command. And wiring reference [here](#raspberry-pi-communicates-with-the-hotend-board-via-canbus)<br/>
+3. If you use Canbus to communicate with raspberry pi, you need to modify the following files by logging into the RPi (with SSH or similar). And wiring reference [here](#raspberry-pi-communicates-with-the-hotend-board-via-canbus)<br/>
    Refer to [klipper's official Canbus config](https://www.klipper3d.org/CANBUS.html) to set Canbus
    * Input `sudo nano /boot/config.txt` command, input the password (default: raspberry), Then add the following content to the `config.txt` file
      ```
