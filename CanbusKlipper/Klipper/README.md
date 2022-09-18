@@ -11,14 +11,14 @@
 ### Raspberry pi communicates with the hotend board via Canbus
 <img src=Images/wiring_canbus.png width="1200" /><br/>
 
-## Generate the firmware.bin (NOT needed if using precompiled firmware above)
+## Generate the firmware.bin 
 
 You can either get precompiled binaries (1) OR build your own firmware (2):
 1. Precompiled firmware
    * [firmware-F072-USB.bin](./firmware-F072-USB.bin) is the firmware that communicates with raspberry pi through USB
    * [firmware-F072-Canbus.bin](./firmware-F072-Canbus.bin) is the firmware that communicates with raspberry pi through Canbus
 
-2. Build your own firmware
+2. Build your own firmware (NOT needed if using precompiled firmware above)
    1. Refer to [klipper's official installation](https://www.klipper3d.org/Installation.html) to download klipper source code to raspberry pi
    2. `Building the micro-controller` with the configuration shown below.
       * [*] Enable extra low-level configuration options
